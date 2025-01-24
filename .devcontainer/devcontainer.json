@@ -1,0 +1,35 @@
+{
+    "name": "DotNet 8 Development Container",
+    "image": "mcr.microsoft.com/dotnet/sdk:8.0",
+    "extensions": [
+        "ms-dotnettools.csharp",
+        "kast789.visual-studio-2022-theme",
+        "formulahendry.dotnet",
+        "ms-dotnettools.vscode-dotnet-runtime",
+        "schneiderpat.aspnet-helper",
+        "kreativ-software.csharpextensions",
+        "adrianwilczynski.namespace",
+        "k--kato.docomment",
+        "ms-azuretools.vscode-docker",
+        "leo-labs.dotnet",
+        "KishoreIthadi.dotnet-core-essentials",
+        "jmrog.vscode-nuget-package-manager",
+        "patcx.vscode-nuget-gallery",
+        "christian-kohler.path-intellisense",
+        "Postman.postman-for-vscode",
+        "jchannon.csharpextensions",
+        "rahulsahay.Csharp-ASPNETCore",
+        "adrianwilczynski.blazor-snippet-pack",
+        "jorgeserrano.vscode-csharp-snippets",
+        "mikestead.dotenv",
+        "ms-vscode.vs-keybindings",
+        "temilaj.asp-net-core-vs-code-extension-pack",
+        "ms-azuretools.vscode-azurefunctions",
+        "ms-dotnettools.csdevkit",
+        "ms-dotnettools.vscodeintellicode-csharp",
+        "ms-vscode-remote.remote-containers"
+    ],
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    }
+}
