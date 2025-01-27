@@ -1,5 +1,13 @@
 {
   "profiles": {
+    "Desev": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "launchUrl": "swagger",
+      "applicationUrl": "https://localhost:7272;http://localhost:5035"
+    },
     "http": {
       "commandName": "Project",
       "launchBrowser": true,
