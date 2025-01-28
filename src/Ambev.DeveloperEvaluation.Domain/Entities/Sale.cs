@@ -1,21 +1,16 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Ambev.DeveloperEvaluation.Domain.Common;
+using Ambev.DeveloperEvaluation.Domain.Contracts;
 
 namespace Ambev.DeveloperEvaluation.Domain.Entities
 {
-    public class Sale
+    public class Sale : BaseEntity, ISaleContract
     {
-        public Sale()
-        {
-            Id = new Guid();
-        }
+        public Sale() : base() { }
 
-        public Guid Id { get; init; }
         public Guid SaleNumber { get; set; }
+        public Guid? BranchOfficeId { get; set; }
+        public Guid? CustomerId { get; set; }
         public IEnumerable<Product>? Products { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public DateTime? UpdatedAt { get; set; }
+        public decimal TotalSaleAmount { get; set; } = 0;
     }
 }

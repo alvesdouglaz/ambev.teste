@@ -1,15 +1,16 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Ambev.DeveloperEvaluation.Domain.Common;
+using Ambev.DeveloperEvaluation.Domain.Contracts;
 
 namespace Ambev.DeveloperEvaluation.Domain.Entities
 {
-    public class Customer
+    public class Customer : BaseEntity, ICustomerContract
     {
-        public Guid CustomerId { get; set; }
-        public string CustomerName { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public DateTime? UpdatedAt { get; set; }
+        #region Atributes
+        public string? Name { get; set; }
+        #endregion Atributes
+
+        #region Methods
+        public Customer() : base() { }
+        #endregion Methods
     }
 }
